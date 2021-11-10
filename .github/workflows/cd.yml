@@ -20,5 +20,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          whoami
-          echo test
+          cd /var/www/html
+          git pull
+          git ci
+          pm2 restart server
