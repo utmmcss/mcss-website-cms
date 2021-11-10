@@ -1,0 +1,21 @@
+name: continuous deployment
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  build:
+    name: Build CMS
+    runs-on: ubuntu-latest
+    steps:
+    - name: deploying new changes on the server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: whoami
