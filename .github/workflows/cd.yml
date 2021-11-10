@@ -23,4 +23,6 @@ jobs:
           cd /var/www/html
           git pull
           npm ci
-          pm2 restart server
+          NODE_ENV=production npm run build
+          pm2 stop server
+          NODE_ENV=production pm2 start server.js
