@@ -24,6 +24,8 @@ jobs:
           git pull
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
+          nvm install 14
+          npm install pm2 -g
           npm ci
           NODE_ENV=production npm run build
           pm2 stop server
