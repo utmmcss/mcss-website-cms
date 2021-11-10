@@ -22,5 +22,5 @@ jobs:
         script: |
           cd /var/www/html
           git pull
-          git ci
+          npm ci
           pm2 restart server
