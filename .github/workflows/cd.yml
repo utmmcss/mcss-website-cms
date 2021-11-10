@@ -22,6 +22,8 @@ jobs:
         script: |
           cd /var/www/html
           git pull
+          sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm" 
+          sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/pm2" "/usr/local/bin/pm2"
           npm ci
           NODE_ENV=production npm run build
           pm2 stop server
