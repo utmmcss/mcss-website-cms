@@ -6,7 +6,7 @@ This repository contains the source code for the CMS for the website
 ### Generate the correct credentials
 Since the CMS is served on a UTM server, you will need to setup the correct ssh credentials in order to access the production database:
 1. run `ssh-keygen -t rsa -b 2048` to generate a key. If you already have a ssh key, you can skip this step
-2. run `ssh-copy-id mcss-cms@mcss-cms.utm.utoronto.ca` to copy the key to the server. The password to the account is in the tech team mcss google drive (as for permission to access it)
+2. run `ssh-copy-id mcss-cms@mcss-cms.utm.utoronto.ca` to copy the key to the server. The password to the account is in the tech team mcss google drive (ask for permission to access it)
 3. run `ssh mcss-cms@mcss-cms.utm.utoronto.ca` and you should not be prompted for a password anymore. 
 4. run `cat ~/.ssh/authorized_keys` to ensure your key was added correctly and you didn't add any key you don't want
 
