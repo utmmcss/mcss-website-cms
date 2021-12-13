@@ -39,7 +39,7 @@
       "type": "richtext",
       "required": true
     },
-    "registration_link": {
+    "registration_url": {
       "type": "string",
       "required": true
     },
