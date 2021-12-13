@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "team_members",
   "info": {
-    "name": "Team-member",
+    "name": "Team-Member",
     "description": ""
   },
   "options": {
@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Role": {
+    "role": {
       "type": "string"
     },
-    "Avatar": {
+    "avatar": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

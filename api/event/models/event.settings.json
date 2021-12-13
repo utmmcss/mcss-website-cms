@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "Event",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "creator": {
+      "type": "string",
+      "required": true
+    },
+    "start_datetime": {
+      "type": "datetime"
+    },
+    "cover_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "registration_link": {
+      "type": "string",
+      "required": true
+    },
+    "categories": {
+      "collection": "event-category"
+    }
+  }
+}
