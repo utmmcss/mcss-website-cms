@@ -45,6 +45,10 @@
     },
     "categories": {
       "collection": "event-category"
+    },
+    "location": {
+      "type": "string",
+      "required": true
     }
   }
 }
