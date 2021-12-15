@@ -49,6 +49,15 @@
     "location": {
       "type": "string",
       "required": true
+    },
+    "end_datetime": {
+      "type": "datetime",
+      "required": true
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
