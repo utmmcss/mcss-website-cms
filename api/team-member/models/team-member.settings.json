@@ -27,6 +27,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "website_url": {
+      "type": "string"
     }
   }
 }
