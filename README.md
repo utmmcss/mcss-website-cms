@@ -2,6 +2,8 @@
 
 This repository contains the source code for the CMS for the website
 
+![example workflow](https://github.com/utmmcss/mcss-website-cms/actions/workflows/cd.yml/badge.svg)
+
 ## Setup
 ### Generate the correct credentials
 Since the CMS is served on a UTM server, you will need to setup the correct ssh credentials in order to access the production database:
