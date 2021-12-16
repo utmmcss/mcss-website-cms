@@ -30,6 +30,10 @@
     },
     "website_url": {
       "type": "string"
+    },
+    "executive": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
