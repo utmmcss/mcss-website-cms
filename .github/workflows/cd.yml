@@ -29,4 +29,4 @@ jobs:
           npm ci
           NODE_ENV=production npm run build
           pm2 stop server
-          NODE_ENV=production pm2 start server.js
+          NODE_ENV=production npm run start
