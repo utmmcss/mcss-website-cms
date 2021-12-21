@@ -28,5 +28,5 @@ jobs:
           npm install pm2 -g
           npm ci
           NODE_ENV=production npm run build
-          pm2 stop server
-          NODE_ENV=production pm2 start npm -- start
+          pm2 stop cms
+          NODE_ENV=production pm2 start npm --name "cms" -- start
