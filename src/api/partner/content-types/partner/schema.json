@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Cover_image": {
+    "cover_image": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -24,16 +24,16 @@
         "images"
       ]
     },
-    "Content": {
+    "content": {
       "type": "richtext",
       "required": true
     },
-    "Featured": {
+    "featured": {
       "type": "boolean",
       "default": false,
       "required": true
     },
-    "Description": {
+    "description": {
       "type": "string",
       "required": true
     },
@@ -41,6 +41,10 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::partner-category.partner-category"
+    },
+    "partner_url": {
+      "type": "string",
+      "required": true
     }
   }
 }
