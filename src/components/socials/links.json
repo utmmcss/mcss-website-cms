@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_socials_links",
+  "info": {
+    "displayName": "Links"
+  },
+  "options": {},
+  "attributes": {
+    "Website": {
+      "type": "string"
+    },
+    "Linkedin": {
+      "type": "string"
+    },
+    "Instagram": {
+      "type": "string"
+    },
+    "Github": {
+      "type": "string"
+    }
+  }
+}

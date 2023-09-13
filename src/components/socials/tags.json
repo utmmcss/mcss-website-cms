@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_socials_tags",
+  "info": {
+    "displayName": "Tag",
+    "icon": "discuss",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "enumeration",
+      "enum": [
+        "Computer Science",
+        "Mathematics",
+        "Statistics",
+        "PEY",
+        "Student Life",
+        "Informational",
+        "Guide",
+        "MCSS",
+        "Partner",
+        "In Person",
+        "Remote",
+        "Hybrid",
+        "Partner Event",
+        "Other"
+      ]
+    }
+  }
+}
