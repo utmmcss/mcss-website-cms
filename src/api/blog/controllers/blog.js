@@ -8,10 +8,10 @@ const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController("api::blog.blog", ({ strapi }) => ({
     async find(ctx) {
-      const { data, meta } = await super.find(ctx);
+      var { data, meta } = await super.find(ctx);
 
       // Don't include Content and Author attributes when querying for all blogs
-      const new_data = data.map(item => {
+      data = data.map(item => {
         const newItem = { ...item };
         if (newItem.attributes) {
           delete newItem.attributes.Author;
@@ -20,6 +20,6 @@ module.exports = createCoreController("api::blog.blog", ({ strapi }) => ({
         return newItem;
       });
 
-      return { new_data, meta };
+      return { data, meta };
     }
   }));
