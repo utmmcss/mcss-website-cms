@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-13T20:31:17.605Z"
+    "x-generation-date": "2023-09-23T00:45:28.917Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2973,7 +2973,33 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/BlogListResponse"
-                }
+                },
+                "example":
+                  {
+                    "data": [
+                        {
+                            "id": 1,
+                            "attributes": {
+                                "createdAt": "2023-09-17T18:02:08.349Z",
+                                "updatedAt": "2023-09-23T00:33:45.352Z",
+                                "publishedAt": "2023-09-17T18:02:10.668Z",
+                                "locale": "en",
+                                "title": "foo",
+                                "featured": false,
+                                "date": "2023-09-17",
+                                "description": "foo foo foo"
+                            }
+                        }
+                    ],
+                    "meta": {
+                        "pagination": {
+                            "page": 1,
+                            "pageSize": 25,
+                            "pageCount": 1,
+                            "total": 1
+                        }
+                    }
+                  }
               }
             }
           },
@@ -3225,6 +3251,24 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/BlogResponse"
+                },
+                "example": {
+                  "data": {
+                      "id": 1,
+                      "attributes": {
+                          "createdAt": "2023-09-17T18:02:08.349Z",
+                          "updatedAt": "2023-09-23T00:33:45.352Z",
+                          "publishedAt": "2023-09-17T18:02:10.668Z",
+                          "locale": "en",
+                          "title": "foo",
+                          "featured": false,
+                          "date": "2023-09-17",
+                          "author": "John Smith",
+                          "content": "foo foo",
+                          "description": "foo foo foo"
+                      }
+                  },
+                  "meta": {}
                 }
               }
             }
@@ -3570,6 +3614,32 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/EventListResponse"
+                },
+                "example": {
+                  "data": [
+                      {
+                          "id": 1,
+                          "attributes": {
+                              "createdAt": "2023-09-18T00:02:25.907Z",
+                              "updatedAt": "2023-09-23T00:34:07.557Z",
+                              "publishedAt": "2023-09-18T00:02:26.610Z",
+                              "title": "foo",
+                              "featured": false,
+                              "start": "2023-09-18T04:00:00.000Z",
+                              "end": "2023-09-19T04:45:00.000Z",
+                              "location": "canada",
+                              "description": "foo foo foo"
+                          }
+                      }
+                  ],
+                  "meta": {
+                      "pagination": {
+                          "page": 1,
+                          "pageSize": 25,
+                          "pageCount": 1,
+                          "total": 1
+                      }
+                  }
                 }
               }
             }
@@ -3822,6 +3892,23 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/EventResponse"
+                },
+                "example": {
+                  "data": {
+                      "id": 1,
+                      "attributes": {
+                          "createdAt": "2023-09-18T00:02:25.907Z",
+                          "updatedAt": "2023-09-23T00:34:07.557Z",
+                          "publishedAt": "2023-09-18T00:02:26.610Z",
+                          "title": "foo",
+                          "start": "2023-09-18T04:00:00.000Z",
+                          "end": "2023-09-19T04:45:00.000Z",
+                          "location": "canada",
+                          "content": "foo foo",
+                          "description": "foo foo foo"
+                      }
+                  },
+                  "meta": {}
                 }
               }
             }
@@ -4075,6 +4162,31 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/TeamMemberListResponse"
+                },
+                "example": {
+                  "data": [
+                      {
+                          "id": 2,
+                          "attributes": {
+                              "createdAt": "2023-09-17T23:35:02.473Z",
+                              "updatedAt": "2023-09-23T00:34:33.942Z",
+                              "publishedAt": "2023-09-17T23:35:03.636Z",
+                              "name": "John Smith",
+                              "role": "Tech associate",
+                              "year": "2023",
+                              "executive": false,
+                              "markdown": "foo"
+                          }
+                      }
+                  ],
+                  "meta": {
+                      "pagination": {
+                          "page": 1,
+                          "pageSize": 25,
+                          "pageCount": 1,
+                          "total": 1
+                      }
+                  }
                 }
               }
             }
@@ -4327,6 +4439,22 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/TeamMemberResponse"
+                },
+                "example": {
+                  "data": {
+                      "id": 2,
+                      "attributes": {
+                          "createdAt": "2023-09-17T23:35:02.473Z",
+                          "updatedAt": "2023-09-23T00:34:33.942Z",
+                          "publishedAt": "2023-09-17T23:35:03.636Z",
+                          "name": "John Smith",
+                          "role": "Tech associate",
+                          "year": "2023",
+                          "executive": false,
+                          "markdown": "foo"
+                      }
+                  },
+                  "meta": {}
                 }
               }
             }
