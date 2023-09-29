@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academics_categories",
+  "info": {
+    "singularName": "academics-category",
+    "pluralName": "academics-categories",
+    "displayName": "Academics-category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
