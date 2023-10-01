@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academics",
+  "info": {
+    "singularName": "academic",
+    "pluralName": "academics",
+    "displayName": "Academics",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Creator": {
+      "type": "string",
+      "required": true
+    },
+    "Cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Content": {
+      "type": "richtext",
+      "required": true
+    },
+    "Featured": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    },
+    "Categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::academics-category.academics-category"
+    }
+  }
+}
