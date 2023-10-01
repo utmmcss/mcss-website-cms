@@ -4,7 +4,7 @@
   "info": {
     "singularName": "academic",
     "pluralName": "academics",
-    "displayName": "academics",
+    "displayName": "Academics",
     "description": ""
   },
   "options": {
@@ -12,15 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "Title": {
       "type": "string",
       "required": true
     },
-    "creator": {
+    "Creator": {
       "type": "string",
       "required": true
     },
-    "cover_image": {
+    "Cover_image": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -28,20 +28,20 @@
         "images"
       ]
     },
-    "content": {
+    "Content": {
       "type": "richtext",
       "required": true
     },
-    "featured": {
+    "Featured": {
       "type": "boolean",
       "required": true,
       "default": false
     },
-    "description": {
+    "Description": {
       "type": "string",
       "required": true
     },
-    "categories": {
+    "Categories": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::academics-category.academics-category"

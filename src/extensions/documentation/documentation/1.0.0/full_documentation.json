@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-09-29T22:43:02.352Z"
+    "x-generation-date": "2023-10-01T17:14:37.640Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -94,22 +94,22 @@
         "properties": {
           "data": {
             "required": [
-              "title",
-              "creator",
-              "cover_image",
-              "content",
-              "featured",
-              "description"
+              "Title",
+              "Creator",
+              "Cover_image",
+              "Content",
+              "Featured",
+              "Description"
             ],
             "type": "object",
             "properties": {
-              "title": {
+              "Title": {
                 "type": "string"
               },
-              "creator": {
+              "Creator": {
                 "type": "string"
               },
-              "cover_image": {
+              "Cover_image": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -120,16 +120,16 @@
                 ],
                 "example": "string or id"
               },
-              "content": {
+              "Content": {
                 "type": "string"
               },
-              "featured": {
+              "Featured": {
                 "type": "boolean"
               },
-              "description": {
+              "Description": {
                 "type": "string"
               },
-              "categories": {
+              "Categories": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -196,21 +196,21 @@
       "Academic": {
         "type": "object",
         "required": [
-          "title",
-          "creator",
-          "cover_image",
-          "content",
-          "featured",
-          "description"
+          "Title",
+          "Creator",
+          "Cover_image",
+          "Content",
+          "Featured",
+          "Description"
         ],
         "properties": {
-          "title": {
+          "Title": {
             "type": "string"
           },
-          "creator": {
+          "Creator": {
             "type": "string"
           },
-          "cover_image": {
+          "Cover_image": {
             "type": "object",
             "properties": {
               "data": {
@@ -831,16 +831,16 @@
               }
             }
           },
-          "content": {
+          "Content": {
             "type": "string"
           },
-          "featured": {
+          "Featured": {
             "type": "boolean"
           },
-          "description": {
+          "Description": {
             "type": "string"
           },
-          "categories": {
+          "Categories": {
             "type": "object",
             "properties": {
               "data": {
@@ -854,7 +854,7 @@
                     "attributes": {
                       "type": "object",
                       "properties": {
-                        "type": {
+                        "Type": {
                           "type": "string"
                         },
                         "createdAt": {
@@ -988,11 +988,11 @@
         "properties": {
           "data": {
             "required": [
-              "type"
+              "Type"
             ],
             "type": "object",
             "properties": {
-              "type": {
+              "Type": {
                 "type": "string"
               }
             }
@@ -1048,10 +1048,10 @@
       "AcademicsCategory": {
         "type": "object",
         "required": [
-          "type"
+          "Type"
         ],
         "properties": {
-          "type": {
+          "Type": {
             "type": "string"
           },
           "createdAt": {
@@ -2381,11 +2381,11 @@
         "properties": {
           "data": {
             "required": [
-              "type"
+              "Type"
             ],
             "type": "object",
             "properties": {
-              "type": {
+              "Type": {
                 "type": "string"
               }
             }
@@ -2441,10 +2441,10 @@
       "BlogCategory": {
         "type": "object",
         "required": [
-          "type"
+          "Type"
         ],
         "properties": {
-          "type": {
+          "Type": {
             "type": "string"
           },
           "createdAt": {
