@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-10-01T17:14:37.640Z"
+    "x-generation-date": "2023-10-10T04:19:23.583Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3614,11 +3614,11 @@
         "properties": {
           "data": {
             "required": [
-              "type"
+              "Type"
             ],
             "type": "object",
             "properties": {
-              "type": {
+              "Type": {
                 "type": "string"
               }
             }
@@ -3674,10 +3674,10 @@
       "EventCategory": {
         "type": "object",
         "required": [
-          "type"
+          "Type"
         ],
         "properties": {
-          "type": {
+          "Type": {
             "type": "string"
           },
           "createdAt": {
@@ -4013,13 +4013,13 @@
               "Title": {
                 "type": "string"
               },
-              "content": {
+              "Content": {
                 "type": "string"
               },
               "Featured": {
                 "type": "boolean"
               },
-              "cover_image": {
+              "Cover_image": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -4089,13 +4089,13 @@
           "Title": {
             "type": "string"
           },
-          "content": {
+          "Content": {
             "type": "string"
           },
           "Featured": {
             "type": "boolean"
           },
-          "cover_image": {
+          "Cover_image": {
             "type": "object",
             "properties": {
               "data": {
@@ -4797,11 +4797,11 @@
         "properties": {
           "data": {
             "required": [
-              "type"
+              "Type"
             ],
             "type": "object",
             "properties": {
-              "type": {
+              "Type": {
                 "type": "string"
               }
             }
@@ -4857,10 +4857,10 @@
       "PartnerCategory": {
         "type": "object",
         "required": [
-          "type"
+          "Type"
         ],
         "properties": {
-          "type": {
+          "Type": {
             "type": "string"
           },
           "createdAt": {
